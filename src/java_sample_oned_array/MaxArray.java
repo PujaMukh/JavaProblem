@@ -3,16 +3,16 @@ import java.lang.*;
 import java.util.*;
 
 public class MaxArray {
-    //find the max element in an array
+    //find the min element in an array
     public static void main(String args[]) {
         Scanner sc=new Scanner(System.in);
         int N=sc.nextInt(); //take input N
 
-        int[] arr=new int[N]; //declare and initialize array and declare size of array N
-        int max=arr[0]; //initialize max element to array index 0
+        int[] arr=new int[N]; //declare array of size N
+        int max=Integer.MIN_VALUE; //initialize max
 
         for (int i=0; i<N; i++) {
-            arr[i]=sc.nextInt(); //traverse all elements in array
+            arr[i]=sc.nextInt(); //initialize all elements in array
             if (arr[i]>max) { //condition
                 max=arr[i];
             }
