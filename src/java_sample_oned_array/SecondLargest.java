@@ -17,7 +17,7 @@ public class SecondLargest {
         }
 
         if ((N==1) || (N==2)) {
-            System.out.print("NA"); //if size is one there is no 2nd largest
+            System.out.print("NA"); //if size is one or two there is no 2nd largest
         }
         else {
             for (int i=0; i<N; i++) {
