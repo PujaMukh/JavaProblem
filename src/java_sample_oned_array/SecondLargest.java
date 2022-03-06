@@ -16,7 +16,7 @@ public class SecondLargest {
             A[i]=sc.nextInt(); //take values in array A
         }
 
-        if (N==1) {
+        if ((N==1) || (N==2)) {
             System.out.print("NA"); //if size is one there is no 2nd largest
         }
         else {
