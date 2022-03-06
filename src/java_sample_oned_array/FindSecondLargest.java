@@ -3,6 +3,7 @@ import java.lang.*;
 import java.util.*;
 
 public class FindSecondLargest {
+    //find 2nd largest in an array using one loop
     public static void main(String args[]) {
         int max= Integer.MIN_VALUE;
         int max2= Integer.MIN_VALUE;
