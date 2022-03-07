@@ -16,12 +16,18 @@ public class RotateBtimes {
         int B=sc.nextInt(); //take input for B which is the no of times array will be rotated
 
         if (N==B) {                //if B is equal to size of array, no need to rotate array even once
-            for (int i=0; i<N; i++) {
+            for (int i = 0; i < N; i++) {
                 System.out.print(A[i] + " ");
             }
         }
+            else if (B%N==0) { //if it is multiples of B, array will remain same
+                for (int i=0; i<N; i++) {
+                    System.out.print(A[i] + " ");
+                }
+            }
+
        else {      //if B!=N, enter this loop and rotate array B times
-            for (int i=0; i<B; i++) {  //loop to rotate the array B times
+            for (int i=0; i<(B%N); i++) {  //loop to rotate the array B times (added worst case time complexity)
                 int temp=A[N-1];     //put the last element in a variable temp
                 for (int j=N-2; j>=0;j--) { //loop to move elements to the right
                     A[j+1]=A[j];
