@@ -15,7 +15,7 @@ public class roundedNumber {
             System.out.print("0");
         }
         else if (A > 0) {
-            if ((result - X) < =0.50) {
+            if ((result - X) <0.50) {
                 System.out.print(X);
             }
             else {
@@ -24,7 +24,7 @@ public class roundedNumber {
         }
 
         else if (A< 0){
-            if ((result-X)< (-0.50)) {
+            if ((result-X)<=(-0.50)) {
                 System.out.print(X-1);
             }
             else {
