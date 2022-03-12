@@ -7,9 +7,9 @@ import java.lang.*;
 import java.util.*;
 
 public class NewSqRoot {
-    static int FloorSquareRoot(int A) {
+    static long FloorSquareRoot(long A) {
 
-        for (int i=1; i<=100000;i++) {
+        for (long i=1; i<=100000;i++) {
             if ((i*i==A) || ((i+1)*(i+1)>A)) { //either one of these conditions will be true to return floor value
                 return i;
             }
@@ -18,7 +18,7 @@ public class NewSqRoot {
     }
     public static void main(String args[]) {
         Scanner sc=new Scanner(System.in);
-        int A=sc.nextInt(); //take input for A
+        long A=sc.nextLong(); //take input for A
         System.out.println(FloorSquareRoot(A));
     }
 }
