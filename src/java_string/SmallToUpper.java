@@ -23,10 +23,11 @@ public class SmallToUpper {
         return output;
 
     }
-    static char upperChar(char a) { //pass a char named a
-        int d=(int) a- 32; //convert the char to int and store it in int d
+    static char upperChar(char a) { ////function to make 1 character to capital
+        int d=(int) a- 32; //int d will store ASCII of upper case char
+        //now convert it to char and store the result in char b
         char b=(char) d; //convert the int d with upper value in char b
-        return b;
+        return b; //finally return the 1 character in capital
     }
 
     public static void main(String args[]) {
