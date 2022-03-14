@@ -15,7 +15,7 @@ public class PerfectNumber {
         //i=perfect number variable
         //j=factors less than i
 
-        for (int i=6; i<=A; i++) { //logic loop
+        for (int i=6; i<=A; i++) { //logic loop (6 since 1st perfect number is 6)
             int sum=0;
             for (int j=1; j<i; j++) {
                 if (i%j==0) {
