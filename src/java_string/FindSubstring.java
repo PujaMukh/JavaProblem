@@ -31,18 +31,22 @@ public class FindSubstring {
 
           int i=0;
           while (i<P) {
-
+          int temp=i;
               int j=0;
               while (j<Q) {
-                  if (D[i]==E[j]) {
+                  if (D[temp]==E[j]) {
                       j++;
-                      i++;
+                      temp++;
                   }
                   else {
-                      i++;
+                      break;
                   }
               }
-              return i+1-Q;
+              if(j==Q) {
+                  return i+1;
+              }
+              i=i+1;
+
           }
           return -1;
 
