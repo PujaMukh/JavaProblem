@@ -20,7 +20,7 @@ public class TrimEnds {
 
         int c1=0;
            int i=0;
-            while(i<N && ch[i]<=97) {
+            while(i<N && ch[i]<97) {
                 c1++; //count of leading *'s
                 i++;
             }
@@ -36,7 +36,7 @@ public class TrimEnds {
         }
         int c2=0; //initializing to store count of trailing *'s
            int j=M-1;
-            while(j>=0 && ch2[j]<=97) {
+            while(j>=0 && ch2[j]<97) {
                 c2++;
                 j--;
             }
