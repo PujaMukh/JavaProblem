@@ -7,7 +7,7 @@ import java.util.*;
 public class SumOfEvens {
     static int sumEvens(int A) {
         int sum=0;
-        for (int i=2; i<=A; i++) {
+        for (int i=2; i<=A; i+2) {
             if (i%2==0) {
                 sum=sum+i;
             }
