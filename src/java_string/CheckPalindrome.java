@@ -1,6 +1,5 @@
 package java_string;
-//given a string, check if it is palindrome or not
-//a string with 1 letter is by default a palindrome
+//check if it is palindrome or not
 
 import java.lang.*;
 import java.util.*;
