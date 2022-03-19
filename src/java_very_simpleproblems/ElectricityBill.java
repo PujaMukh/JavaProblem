@@ -1,7 +1,5 @@
 package java_very_simpleproblems;
-//Given an integer A denoting the amount of units of electricity consumed,
-// you have to calculate the electricity bill (in Rs.) with the help of the below charge conditions:
-//Return an integer denoting the floor value of the Electricity bill.
+//calculate floor value of electricity bill
 
 import java.lang.*;
 import java.util.*;
