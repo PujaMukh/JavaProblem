@@ -1,5 +1,5 @@
 package java_very_simpleproblems;
-//You are given an integer A. You have to tell whether A is divible by both 5 and 11 or not.
+//tell if int A is divisible by both 5 and 11
 
 import java.lang.*;
 import java.util.*;
