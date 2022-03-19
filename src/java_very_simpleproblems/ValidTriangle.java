@@ -1,8 +1,5 @@
 package java_very_simpleproblems;
-//You are given 3 integer angles(in degrees) A, B and C of a triangle.
-// You have to tell whether the triangle is valid or not.
-//A triangle is valid if sum of its angles equals to 180.
-
+//check if triangle if valid or not
 import java.lang.*;
 import java.util.*;
 public class ValidTriangle {
