@@ -1,6 +1,5 @@
 package java_very_simpleproblems;
-//You are given an integer N you need to print all the Prime Numbers between 1 and N.
-//N will also be included
+//print all prime numbers from 1 to N including N
 
 import java.lang.*;
 import java.util.*;
