@@ -1,6 +1,5 @@
 package java_very_simpleproblems;
-//You are given an integer A, you need to find and return the sum of all the even numbers
-// between 1 and A.
+//sum of all even
 
 import java.lang.*;
 import java.util.*;
