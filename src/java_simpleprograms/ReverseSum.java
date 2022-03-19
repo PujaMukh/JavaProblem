@@ -1,12 +1,6 @@
 package java_simpleprograms;
 
 //Given an integer, find the sum of the number and its reverse.
-//Example Input:
-//N = 536
-//Example Output:
-//1171
-//Explanation:
-//536 + 635 = 1171
 
 
 import java.lang.*;
