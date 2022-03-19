@@ -1,11 +1,5 @@
 package java_very_simpleproblems;
-//Write a program to input T numbers(N) from user and print count of digits of the given numbers.
-//eg.:
-//2
-//100
-//1000
-//output=3
-//4
+//Write a program to  print count of digits of the given number.
 
 import java.lang.*;
 import java.util.*;
