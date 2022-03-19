@@ -1,14 +1,5 @@
 package java_very_simpleproblems;
-//Write a program to input from user five numbers(A, B, C, D & E)
-// representing marks of student in 5 subjects out of 100.
-// You have to calculate percentage and then Grade of each student.
-//If percentage >= 90% : Grade A
-//If percentage >= 80% : Grade B
-//If percentage >= 70% : Grade C
-//If percentage >= 60% : Grade D
-//If percentage >= 40% : Grade E
-//If percentage < 40% : Grade F
-//NOTE: You have to take the lowest integer of percentage. E.g. 90.8% will be treated as 90%.
+//percentage problem
 
 import java.lang.*;
 import java.util.*;
