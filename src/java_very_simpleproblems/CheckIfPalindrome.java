@@ -1,8 +1,5 @@
 package java_very_simpleproblems;
 //Given an integer A, determine whether it is palindromic or not.
-//A palindrome integer is an integer X for which reverse(X) = X
-// where reverse(X) is X with its digits reversed. For e.g., reverse(123) = 321.
-
 import java.lang.*;
 import java.util.*;
 public class CheckIfPalindrome {
