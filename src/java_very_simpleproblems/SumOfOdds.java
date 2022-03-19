@@ -1,6 +1,5 @@
 package java_very_simpleproblems;
-//You are given a positive integer A. You have to print the sum of all odd numbers
-// in the range [1, A].
+//sum of all odd
 import java.lang.*;
 import java.util.*;
 public class SumOfOdds {
