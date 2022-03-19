@@ -1,6 +1,5 @@
 package java_very_simpleproblems;
 //Given an integer A, you have to tell whether it is a prime number or not.
-//A prime number is a natural number greater than 1 which is divisible only by 1 and itself.
 
 import java.lang.*;
 import java.util.*;
