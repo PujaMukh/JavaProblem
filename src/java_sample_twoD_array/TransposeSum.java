@@ -1,12 +1,5 @@
 package java_sample_twoD_array;
 //Given a square matrix of size N, find its transpose and compute their sum.
-//Sample Input:
-//2
-//1 9
-//2 6
-//Sample Output:
-//2 11
-//11 12
 
 import java.lang.*;
 import java.util.*;
