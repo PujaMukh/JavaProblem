@@ -1,6 +1,5 @@
 package java_very_simpleproblems;
-//You are given an integer A.
-//You have to tell how many days are there in the month denoted by A in a non-leap year.
+//calculate number of days in a non leap year
 
 import java.lang.*;
 import java.util.*;
