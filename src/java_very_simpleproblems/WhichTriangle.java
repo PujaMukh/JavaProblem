@@ -1,6 +1,5 @@
 package java_very_simpleproblems;
-//Write a program to input from user three numbers(A, B & C) representing side lengths of a triangle.
-//You have to print if the traingle is "equilateral", "scalene" or "isosceles".
+ //tell if the traingle is either of below mentioned types
 //equilateral-all same length
 //scalene-all 3 diff
 //isosceles-2 equal length
