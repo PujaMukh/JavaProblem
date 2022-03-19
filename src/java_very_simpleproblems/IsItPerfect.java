@@ -1,14 +1,5 @@
 package java_very_simpleproblems;
-//You are given N positive integers.
-//For each given integer A, you have to tell whether it is a perfect number or not.
-//Perfect number is a positive integer which is equal to the sum of its proper positive divisors.
-//First line of the input contains a single integer N.
-//Each of the next N lines contains a single integer A.
-//eg. 2
-//4
-//6
-//o/p= 0
-//1
+//calculate if the number is a perfect number
 
 import java.lang.*;
 import java.util.*;

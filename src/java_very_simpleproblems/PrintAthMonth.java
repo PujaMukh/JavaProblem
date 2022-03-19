@@ -1,5 +1,5 @@
 package java_very_simpleproblems;
-//Write a program to input an integer(A) from user and print the Ath month of the year.
+//print Ath month
 
 import java.lang.*;
 import java.util.*;

@@ -1,7 +1,5 @@
 package java_very_simpleproblems;
-//Write a program to print all even numbers from 1 to N where you have to take N as input from user.
-//Strictly use while loop.
-
+//print all even 
 import java.lang.*;
 import java.util.*;
 public class PrintEven {

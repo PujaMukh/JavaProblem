@@ -3,8 +3,7 @@ package java_very_simpleproblems;
 import java.lang.*;
 import java.util.*;
 
-//Write a program to print all Natural numbers from 1 to N where you have to take N
-// as input from user
+//print all natural numbers from 1 to N
 public class PrintNatural1 {
         public static void main(String args[]) {
             Scanner sc=new Scanner(System.in);

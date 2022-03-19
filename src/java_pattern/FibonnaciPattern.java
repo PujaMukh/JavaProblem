@@ -1,9 +1,5 @@
 package java_pattern;
-//Take N (number of rows), print the following pattern (for N = 4)
-// 0
-// 1 1
-// 2 3 5
-// 8 13 21 34
+//print fibonacci pattern where 1st row is 0
 
 import java.lang.*;
 import java.util.*;

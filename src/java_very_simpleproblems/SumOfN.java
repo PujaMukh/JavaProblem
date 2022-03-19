@@ -1,6 +1,5 @@
 package java_very_simpleproblems;
-//Write a program to find sum all Natural numbers from 1 to N where you have to take N
-//as input from user
+//print all natural numbers from 1 to N
 
 import java.lang.*;
 import java.util.*;

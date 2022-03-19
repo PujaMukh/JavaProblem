@@ -1,11 +1,5 @@
 package java_simpleprograms;
 //GCD of N Numbers
-//Given N numbers, find and print their GCD.
-//Sample Input:
-//5
-//20 40 100 55 35
-//Sample Output:
-//5
 
 import java.lang.*;
 import java.util.*;

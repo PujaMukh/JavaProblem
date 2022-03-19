@@ -1,6 +1,5 @@
 package java_very_simpleproblems;
-//You are given two integers A and B. You have to find the value of A^B.
-//NOTE: The value of answer is always less than or equal to 109.
+//find the value of A^B
 
 import java.lang.*;
 import java.util.*;

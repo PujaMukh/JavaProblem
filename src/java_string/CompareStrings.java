@@ -1,8 +1,6 @@
 package java_string;
-//You will be given 2 strings (A and B) in lowercase
-//
-//You have to lexicigraphically compare two strings and return either 0 or 1 or -1.
-//
+
+//lexicigraphically compare two strings and return either 0 or 1 or -1.
 //0 if both are equal, 1 if A is lexicigraphically greater than B(if falls later in dictionary)
 //otherwise -1 (if string A comes 1st in dictionary)
 

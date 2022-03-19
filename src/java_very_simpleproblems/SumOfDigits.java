@@ -1,7 +1,5 @@
 package java_very_simpleproblems;
-//Write a program to input T numbers(N) from user and print the sum of the digits of the given numbers.
-//N starts from 0 to upto 9 digits
-
+//sum of digits
 import java.lang.*;
 import java.util.*;
 public class SumOfDigits {

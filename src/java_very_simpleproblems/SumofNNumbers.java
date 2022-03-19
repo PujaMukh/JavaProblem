@@ -1,7 +1,5 @@
 package java_very_simpleproblems;
-//Write a function that takes a positive number A as an argument and
-// returns the sum of all numbers from 1 to A.
-//formula is n(n+1)/2
+//sum of all numbers using formula
 
 import java.lang.*;
 import java.util.*;

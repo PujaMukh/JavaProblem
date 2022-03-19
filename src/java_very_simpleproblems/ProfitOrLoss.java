@@ -1,7 +1,5 @@
 package java_very_simpleproblems;
-//You are given the Cost Price C and Selling Price S of a Product.
-// You have to tell whether there is a Profit or Loss(return 1 or -1)
-// Also, calculate total profit or loss.
+//calculate profit or loss
 
 import java.lang.*;
 import java.util.*;
