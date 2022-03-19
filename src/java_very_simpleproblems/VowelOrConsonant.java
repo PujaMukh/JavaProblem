@@ -1,6 +1,5 @@
 package java_very_simpleproblems;
-//You are given a lowercase latin alphabetic character C.
-// You have to tell whether it is a vowel or not.
+//check if vowel or not
 
 import java.lang.*;
 import java.util.*;
