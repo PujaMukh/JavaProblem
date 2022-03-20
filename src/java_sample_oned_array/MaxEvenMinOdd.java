@@ -1,4 +1,4 @@
-package java_string;
+package java_sample_oned_array;
 //given an array of elements, return max of even minus min of odd
 
 import java.lang.*;
