@@ -3,26 +3,30 @@ package java_sample_oned_array;
 //find the time they are singing together.
 //sister 1 starts at A1 and ends at A2, and  sister 2 starts at B1 and ends at B2.
 //A1 always <A2 and B1 always less than B2
-
+//NOW DO IT IN A SIMPLE WAY BUT NOT ADDING TOO MANY &&'S
 import java.lang.*;
 import java.util.*;
 public class SingingCompetition {
     static int twoSisters(int A1, int A2, int B1, int B2) {
-        if ((A1<B1 && A2<B1 && A2<B2) || (B1<A1 && B2<A1 && B2<A2)) {
-            return 0;
+        int result=0;
+        if (A1<B1) {
+            if (B2<A2) {
+                result=B2-B1;
+            }
+            else if (B2>A2) {
+                result=A2-B1;
+            }
         }
-        else if (A1<B1 && B2<A2) {
-            return B2-B1;
+        else if(A1>B1) {
+            if (A2<B2) {
+                result=A2-A1;
+            }
+            else if (A2>B2) {
+                result=B2-A1;
+            }
+
         }
-        else if (A1<A2 && A2<B2 && B1<A2 && A1<B1) {
-            return A2-B1;
-        }
-        else if (A1<B2 && B1<A2 && B1<A1 && A2<B2) {
-            return A2-A1;
-        }
-        else {
-            return B2-A1;
-        }
+        return result;
     }
     public static void main(String args[])   {
         Scanner sc=new Scanner(System.in);
