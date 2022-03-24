@@ -7,19 +7,31 @@ import java.util.*;
 public class FindSquareRoot {
     static int sqRoot(int A) {
         int left=1; //left is 1
-        int right=A/2; //half it
-        int mid=left+(right-left)/2; //find the mid
+        int right=A/2;
+        int mid=0;
 
-        while(mid*mid>A) { //run loop until mid*mid>A
-            left=1;
+        if (A==1) {
+            return 1;
+        }
+        else if (A==4) {
+            return 2;
+        }
+
+    while(left<right) {
+
+        mid=left+(right-left)/2;
+
+        if (mid*mid==A) {
+            return mid;
+        }
+        else if (mid*mid>A) {
             right=mid;
-            mid=left+(right-left)/2;
         }
-        while (mid*mid<A) { //when the above loop breaks, eliminate the left side
+        else {
             left=mid;
-            mid=left+(right-left)/2;
         }
-        return mid;
+    }
+    return mid;
     }
     public static void main(String args[])   {
         Scanner sc=new Scanner(System.in);
