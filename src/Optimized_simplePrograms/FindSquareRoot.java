@@ -5,10 +5,10 @@ import java.lang.*;
 import java.util.*;
 
 public class FindSquareRoot {
-    static int sqRoot(int A) {
-        int left=1; //left is 1
-        int right=A/2;
-        int mid=0;
+    static long sqRoot(long A) {
+        long left=1; //left is 1
+        long right=A/2;
+        long mid=0;
 
         if (A==1) {
             return 1;
@@ -27,15 +27,18 @@ public class FindSquareRoot {
         else if (mid*mid>A) {
             right=mid;
         }
-        else {
+        else if (mid*mid<A){
             left=mid;
+            if ((right-left==1 && right*right!=A )|| (right-left==1 && left*left!=A)) {
+                return -1; //to prevent infinite loop
+            }
         }
     }
     return mid;
     }
     public static void main(String args[])   {
         Scanner sc=new Scanner(System.in);
-        int A=sc.nextInt();
+        long A=sc.nextLong();
         System.out.print(sqRoot(A));
     }
 
