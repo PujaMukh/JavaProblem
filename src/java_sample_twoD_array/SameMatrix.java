@@ -1,6 +1,7 @@
 package java_sample_twoD_array;
 import java.lang.*;
 import java.util.*;
+//check if both matrices are same
 public class SameMatrix {
     static int sameMat(int[][]A, int[][]B) {
         int R=A.length;
