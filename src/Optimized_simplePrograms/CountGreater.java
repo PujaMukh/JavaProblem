@@ -42,3 +42,4 @@ public class CountGreater {
     }
 
 }
+//TC is O(N) and SC is O(1)
