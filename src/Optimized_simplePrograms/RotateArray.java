@@ -28,3 +28,4 @@ public class RotateArray {
        }
     }
 }
+//TC is O(N) and SC is O(N)
