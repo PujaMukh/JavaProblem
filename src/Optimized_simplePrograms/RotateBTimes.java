@@ -4,7 +4,7 @@ package Optimized_simplePrograms;
 //1st reverse full array once
 //then reverse/swap 1st half until B-1 index
 //then reverse/swap 2nd half from B index to N-1
-
+//THIS CAN ONLY BE USED IF NUMBER OF ROTATIONS IS < OR = SIZE
 import java.lang.*;
 import java.util.*;
 public class RotateBTimes {
