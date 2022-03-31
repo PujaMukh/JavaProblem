@@ -39,4 +39,4 @@ public class SeparateOddAndEven {
        oddEven(A); //just call the above function since we already printed it in above function
     }
 }
-//Time complexity is O(N)  , space complexity is O(N^2)
+//Time complexity is O(N)  , space complexity is O(N)
