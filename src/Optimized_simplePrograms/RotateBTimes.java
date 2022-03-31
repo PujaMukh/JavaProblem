@@ -1,23 +1,36 @@
 package Optimized_simplePrograms;
 //given an array rotate it B times
-//1st method is O(N^2)
+//now do it using Time complexity O(N)
+//1st reverse full array once
+//then reverse/swap 1st half until B-1 index
+//then reverse/swap 2nd half from B index to N-1
 
 import java.lang.*;
 import java.util.*;
 public class RotateBTimes {
     static int[] rotate(int[]A, int B) {
         int N=A.length; //size of array A
-        if (B%N==0) {
-            return A; //if B is multiples of N, the array will remain same
+
+        //1st reverse full array
+        for (int i=0; i<N/2; i++) {
+            int temp=A[N-1-i];
+            A[N-1-i]=A[i];
+            A[i]=temp;
         }
-        else {
-            for (int i=0; i<B%N; i++) { //if not multiple, we only need to rotate B%N times
-                int temp=A[N-1];
-                for (int j=N-2; j>=0; j--) {
-                    A[j+1]=A[j];
-                }
-                A[0]=temp;
-            }
+
+       //now swap/reverse elements from 0th index to B-1 index
+        //in reverse we start loop from 0 to N/2
+        //here from 0 to B-1
+        for (int j=0; j<B/2; j++) {  //loop to reverse 1st part
+            int temp1=A[B-1-j];
+            A[B-1-j]=A[j];
+            A[j]=temp1;
+        }
+
+        for (int k=0; k<(N-B)/2; k++) { //loop to reverse last part
+            int temp2=A[N-1-k];
+            A[N-1-k]=A[B+k];
+            A[B+k]=temp2;
         }
         return A;
     }
@@ -35,4 +48,4 @@ public class RotateBTimes {
         }
     }
 }
-//TC is O(N^2) and SC is O(1)
+//TC is O(N) and SC is O(1)
