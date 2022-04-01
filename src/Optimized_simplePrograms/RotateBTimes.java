@@ -1,5 +1,5 @@
 package Optimized_simplePrograms;
-//given an array rotate it B times
+//given an array rotate it B times from right side
 //now do it using Time complexity O(N)
 //1st reverse full array once
 //then reverse/swap 1st half until B-1 index
