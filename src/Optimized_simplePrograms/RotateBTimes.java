@@ -5,8 +5,7 @@ package Optimized_simplePrograms;
 //then reverse/swap 1st half until B-1 index
 //then reverse/swap 2nd half from B index to N-1
 
-//THIS CAN ONLY BE USED IF NUMBER OF ROTATIONS IS < OR = SIZE.................!!
-//IF B> OR EQUAL TO SIZE USE THE CODE WRITTEN IN JAVA ONEdARRAY ROTATE B TIMES
+
 
 import java.lang.*;
 import java.util.*;
@@ -20,7 +19,7 @@ public class RotateBTimes {
             A[N-1-i]=A[i];
             A[i]=temp;
         }
-
+     B=B%N;
        //now swap/reverse elements from 0th index to B-1 index
         //in reverse we start loop from 0 to N/2
         //here from 0 to B-1
