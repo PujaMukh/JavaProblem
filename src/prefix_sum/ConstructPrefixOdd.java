@@ -8,7 +8,7 @@ public class ConstructPrefixOdd {
         int N=A.length; //size of array A
 
         int[]sumodd=new int[N]; //declare an array which will contain sum of all odd indices
-        sumodd[0]=A[0]; //edge case
+        sumodd[0]=0; //edge case
 
         for (int i=1; i<N; i++) {
             if (i%2!=0) {
