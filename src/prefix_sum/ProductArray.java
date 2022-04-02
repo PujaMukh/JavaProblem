@@ -34,6 +34,10 @@ public class ProductArray {
 
         //now create another array to return the o/p
         int[]output=new int[N];
+
+        if (N==1) { //edge case
+            return A;
+        }
         for (int i=0; i<N; i++) {
             if (i==0) {
                 output[i]=prod_back[i+1];
