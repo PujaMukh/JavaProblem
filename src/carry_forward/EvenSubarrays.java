@@ -26,4 +26,4 @@ public class EvenSubarrays {
         System.out.print(subArrays(A));
     }
 }
-//SC is O(1)
+//SC is O(1) and TC is O(1)
