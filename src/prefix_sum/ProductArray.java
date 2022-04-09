@@ -41,18 +41,23 @@ public class ProductArray {
         if (N==1) { //edge case
             return A;
         }
-        for (int i=0; i<N; i++) {
-            if (i==0) {
-                output[i]=prod_back[i+1];
-            }
-            else if (i==N-1) {
-                output[i]=prod_front[i-1];
-            }
-            else if (i>0 && i<N-1) {
-                output[i]=prod_front[i-1]*prod_back[i+1];
+        else {
+
+            for (int i=0; i<N; i++) {
+                if (i==0) {
+                    output[i]=prod_back[i+1];
+                }
+                else if (i==N-1) {
+                    output[i]=prod_front[i-1];
+                }
+                else if (i>0 && i<N-1) {
+                    output[i]=prod_front[i-1]*prod_back[i+1];
+                }
+
             }
 
         }
+
         return output;
     }
     public static void main(String args[])   {
