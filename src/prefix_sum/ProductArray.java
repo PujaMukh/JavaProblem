@@ -1,4 +1,5 @@
 package prefix_sum;
+//FACEBOOK INTERVIEW QUESTION
 //given an array, return a product array of same size where ith element will be product
 //of all elements in A array divided by ith element
 
@@ -14,6 +15,8 @@ public class ProductArray {
         int N=A.length;
         //since direct division is a costly process, create 2 arrays which will store the product
         //one from front, one from back
+        //total product divided by that number means virtually deleting that number
+        //so do like other viryally deleting questions
         int[]prod_front=new int[N]; //declare new product front array
         int[]prod_back=new int[N];// declare new product from back array
 
