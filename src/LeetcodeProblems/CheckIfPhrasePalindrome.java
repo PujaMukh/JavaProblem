@@ -1,6 +1,7 @@
 package LeetcodeProblems;
 import java.lang.*;
 import java.util.*;
+//given a phrase conta
 public class CheckIfPhrasePalindrome {
         static boolean isPalindrome(String s) {
             int N=s.length(); //length of string
@@ -20,9 +21,12 @@ public class CheckIfPhrasePalindrome {
                     sb.append(c);
 
                 }
+                else if (s.charAt(i)>='0' && s.charAt(i)<='9') {
+                    sb.append(s.charAt(i));
+                }
             }
 
-            //String input=sb.toString(); //convert it to string
+
 
 
             StringBuilder output=new StringBuilder(); //to store output
