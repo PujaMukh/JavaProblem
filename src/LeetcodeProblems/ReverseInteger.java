@@ -1,6 +1,7 @@
 package LeetcodeProblems;
 //leetcode question 7.
-//reverse an integer. -123 should be -321 in integer range
+//reverse an integer. -123 should be -321 in integer range.
+//here I used long
 public class ReverseInteger {
     public int reverse(int x) {
         //logic: if the number is less than 0, we have to convert it to postive by mutilplying
