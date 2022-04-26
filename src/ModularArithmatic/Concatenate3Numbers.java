@@ -23,3 +23,4 @@ public class Concatenate3Numbers {
 
     }
 }
+//TC is O(1), SC is O(1)
