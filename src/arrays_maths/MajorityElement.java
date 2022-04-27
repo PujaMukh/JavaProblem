@@ -12,6 +12,7 @@ public class MajorityElement {
         int N=A.length;
         int ele=A[0];
         int freq=1;
+        int count=0;
         //to find majority element
         for (int i=1; i<N; i++) {
 
@@ -32,10 +33,10 @@ public class MajorityElement {
 
         for (int i=0; i<N; i++) {
             if (A[i]==ele) {
-                freq++;
+                count++;
             }
         }
-        if (freq>N/2) {
+        if (count>N/2) {
             return ele;
         }
         return -1; //no majority element
