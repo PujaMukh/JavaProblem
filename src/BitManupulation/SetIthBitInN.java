@@ -5,6 +5,7 @@ import java.lang.*;
 import java.util.*;
 public class SetIthBitInN {
     static int setBit(int n, int i) {
+
         return (n | (1<<i));
     }
 
