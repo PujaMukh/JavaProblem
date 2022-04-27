@@ -4,6 +4,7 @@ package BitManupulation;
 //based on the answers, I observed that it is:
 //5^position of binary of 1 in A
 //eg. 1=001=5^1, 3=011=5^1+5^2
+//write binary of first few A's and you will get a pattern
 
 import java.lang.*;
 import java.util.*;
