@@ -1,4 +1,4 @@
-package Optimized_simplePrograms;
+package optimized_simpleprograms;
 //given a perfect square, find the sq root
 
 import java.lang.*;
@@ -26,6 +26,9 @@ public class FindSquareRoot {
         }
         else if (mid*mid>A) {
             right=mid;
+            if ((right-left==1 && right*right!=A )|| (right-left==1 && left*left!=A)) {
+                return -1; //to prevent infinite loop
+            }
         }
         else if (mid*mid<A){
             left=mid;
@@ -43,3 +46,4 @@ public class FindSquareRoot {
     }
 
 }
+//TC is O(log n), SC is O(1)
