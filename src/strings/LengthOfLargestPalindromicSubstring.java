@@ -13,10 +13,10 @@ public class LengthOfLargestPalindromicSubstring {
         int maxLength=0;
         int P1=0;
         int P2=0;
-        //for odd
+
 
             for (int i=0; i<N; i++) {
-                P1=i;
+                P1=i;  //odd
                 P2=i;
                 while (P1>=0 && P2<N && ch[P1]==ch[P2]) {
                     P2++;
