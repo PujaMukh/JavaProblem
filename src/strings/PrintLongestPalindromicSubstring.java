@@ -59,4 +59,4 @@ public class PrintLongestPalindromicSubstring {
         System.out.println(longestPalindrome(A));
     }
 }
-//TC is O(N^2), SC is O(1)
+//TC is O(N^2), SC is O(N) because of stringbuilder
