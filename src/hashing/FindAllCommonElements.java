@@ -2,6 +2,10 @@ package hashing;
 //given 2 arrays, find all common elements. The answer should return all elements which are common
 //eg if 2 appears 2 times in A and 2 tmes in B, return 2 two times.
 
+//hint: 1st I created a frequency hashmap with A array
+//then I iterated through B array and if the key matched and if freq>0. I added it to arraylist
+//and then decreased the freq of that key by 1 in hashmap
+
 import java.lang.*;
 import java.util.*;
 public class FindAllCommonElements {
