@@ -5,6 +5,7 @@ import java.lang.*;
 import java.util.*;
 public class SetXthYthBit {
     static int setBits(int x, int y) {
+
         return ((1<<x) | (1<<y));
     }
 
