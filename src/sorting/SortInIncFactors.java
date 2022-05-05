@@ -4,7 +4,7 @@ import java.lang.*;
 import java.util.*;
 
 //sort in increasing order of number of factors using comparator
-class fac implements Comparator<Integer> { //create your own class
+class factors implements Comparator<Integer> { //create your own class
     public int fact(Integer a) { //function to find number of factors of a given number
         int count=0;
         for (int i=1; i<=a; i++) {
@@ -44,7 +44,7 @@ public class SortInIncFactors {
             A[i]=sc.nextInt();
         }
 
-        Arrays.sort(A, new fac()); //sort (array name, new class name())
+        Arrays.sort(A, new factors()); //sort (array name, new class name())
         for (int i=0; i<N; i++) {
             System.out.print(A[i]+" ");
         }
