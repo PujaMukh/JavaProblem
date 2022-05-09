@@ -3,6 +3,9 @@ package hashing;
 //if not there, return an array with just -1
 import java.lang.*;
 import java.util.*;
+//hint: add 0 and index -1 1st to handle edge case for sum
+//if sum-B is there in hm, get the index
+//else add sum in hm
 public class SubarrayWithGivenSum {
     static int[] solve(int[] A, int B) {
         int N=A.length;
