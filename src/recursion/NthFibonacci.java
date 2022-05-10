@@ -7,6 +7,9 @@ public class NthFibonacci {
         if ((N==1)|| (N==2)) {
             return 1;
         }
+        else if (N==0) {
+            return 0;
+        }
         return findFib(N-1)+findFib(N-2);
     }
     public static void main(String args[])   {
