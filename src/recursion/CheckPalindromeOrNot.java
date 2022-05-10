@@ -14,7 +14,7 @@ public class CheckPalindromeOrNot {
         int N=A.length();
 
         //base condition (or when to stop finally)
-        if (s>=e) {
+        if (s>=e) { //>= for abba(even), for odd s==e is also fine, eg nitin
             return 1;
 
         }
