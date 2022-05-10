@@ -13,6 +13,7 @@ public class CalculatePairIJDiffHS {
         //we are searching for b=A[i]-k in loop. When we get it in the array, that means we have a pair
         for (int i = 0; i < N; i++) {
             //eg k==8, A[]= 8 9 1 5 6, ans should be true
+            //eg 1 6 3, k=2, ans true (with 1 we can do 1--1 to make it 2 or 1+2=3, so 1-3=2)
             //if b is not present in hs, add b
             if ((hs.contains(A[i]+k)) || (hs.contains(A[i]-k))){
                 return true;
