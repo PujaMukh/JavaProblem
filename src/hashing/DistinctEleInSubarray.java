@@ -17,7 +17,7 @@ public class DistinctEleInSubarray {
            //considering 1st k elements and cannot delete anything before 0th index
            //1st consider 1st k elements and calculate freq and use window sliding in loop and delete and add ele
            for (int i=0; i<k; i++) {
-               if (hm.containsKey(A[i])) {
+               if (hm.containsKey(A[i])) {  //hashmap for freq of 1st k elements
                    int val=hm.get(A[i]);
                    hm.put(A[i], val+1);
                }
@@ -25,8 +25,9 @@ public class DistinctEleInSubarray {
                    hm.put(A[i],1);
                }
            }
+
            count=count+hm.size();
-           System.out.println(count);
+
            int start=1;
            int end=k;
 
@@ -39,19 +40,16 @@ public class DistinctEleInSubarray {
                    if (hm.get(A[start-1])==0) {
                        hm.remove(A[start-1]);   //remove if 0
                    }
-                  // System.out.println(hm.get(A[i-1]));
-
 
                    if (hm.containsKey(A[end])) {
-                       val=hm.get(A[end]);
+                       val=hm.get(A[end]);       //adding freq of only end index ele
                        hm.put(A[end], val+1);
-                       //System.out.println(hm.get(A[i]));
+
                    }
                    else {
                        hm.put(A[end],1);
                    }
                count=count+hm.size();
-               System.out.println(count);
 
                start++;
                end++;
