@@ -44,4 +44,4 @@ public class TwoSum {
        }
     }
 }
-//TC is O(N^2), SC is O(1) if not considering o/p
+//TC is O(N), SC is O(N) if not considering o/p
