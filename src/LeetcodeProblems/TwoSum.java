@@ -6,18 +6,28 @@ package LeetcodeProblems;
 import java.lang.*;
 import java.util.*;
 public class TwoSum {
-    static int[] twoSum(int[]A, int target) {
-        int N=A.length;
+    static int[] twoSum(int[]nums, int target) {
+        int N=nums.length;
+        HashMap<Integer,Integer>hm=new HashMap<Integer,Integer>();
         int[]output=new int[2];
+        for (int i=0; i<N; i++) {
+            int b=target-nums[i];
+            int startIndex=-1;
 
-        for (int i=0; i<N-1; i++) {
-            for (int j=i+1; j<N; j++) {
-                if ((A[i]+A[j])==target) {
-                    output[0]=i;
-                    output[1]=j;
+            if (hm.containsKey(b)) {
+                startIndex=hm.get(b);
+                output[0]=startIndex;
+                output[1]=i;
+                if (output.length==2) {
+                    break;
                 }
+
+            }
+            else {
+                hm.put(nums[i], i);
             }
         }
+
         return output;
     }
     public static void main(String args[])   {
