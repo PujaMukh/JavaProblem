@@ -1,6 +1,6 @@
 package linkedlist;
 
-//public class InsertDeletePrint {
+public class InsertDeletePrint { //ignore this class
     public static class Node {
         int val;   //node class
         Node next;
@@ -102,7 +102,7 @@ package linkedlist;
             }
             temp=temp.next;
         }
-        // System.out.println();
+         System.out.println();
     }
 
 
