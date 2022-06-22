@@ -10,15 +10,10 @@ public class MinCost {
     static int findMinCost(int[]A) {
         int N=A.length;
         Arrays.sort(A); //O(nlogn)
-        //reverse
-        for (int i=0; i<N/2; i++) { //O(N)
-            int temp=A[N-1-i];
-            A[N-1-i]=A[i];
-            A[i]=temp;
-        }
+
         int minCost=0;
-        for (int i=0; i<N; i++) { //O(N)
-            minCost=minCost+A[i]*(i+1);
+        for (int i=N-1; i>=0; i--) { //O(N)
+            minCost=minCost+A[i]*(N-i);
         }
         return minCost;
 
