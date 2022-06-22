@@ -10,13 +10,13 @@ public class ArithmaticProgression {
         //hint: sort 1st
         Arrays.sort(A);
 
-        if (N==1 || N==2) {
+        if (N==1) {
             return 1;
         }
-        int diff=A[1]-A[0];
+        int diff=Math.abs(A[0]-A[1]); //considering negative ele as well //eg -2, -4,-6
 
-        for (int i=2; i<N; i++) {
-            if (A[i]-A[i-1]!=diff) {
+        for (int i=1; i<N-1; i++) {
+            if (Math.abs(A[i]-A[i+1])!=diff) {
                 return 0;
             }
         }
