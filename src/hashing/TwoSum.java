@@ -10,25 +10,15 @@ public class TwoSum {
         int N=A.size();
         ArrayList<Integer>output=new ArrayList<Integer>();
         HashMap<Integer,Integer>hm=new HashMap<Integer,Integer>();
-        int minVal=Integer.MAX_VALUE;
-        int minEndIndex=Integer.MAX_VALUE;
-
 
         for (int i=0; i<N; i++) {
             int b=B-A.get(i);
 
             if (hm.containsKey(b)) {
-                int val=hm.get(b);     //hashmap to store A[i] and index
-                int endIndex=i;
+                output.add(hm.get(b)+1);
+                output.add(i+1);
 
-                if (val<minVal) {  //to get min start index
-                    minVal=val;
-                    output.add(val+1);
-                }
-                if (endIndex<minEndIndex) {  //to get min end index
-                    minEndIndex=endIndex;
-                    output.add(endIndex+1);
-                }
+
                 if (output.size()==2)    {  //break, whenever size is 2 coz we only need 2 indexes
                     return output;
                 }
