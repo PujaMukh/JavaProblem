@@ -34,7 +34,7 @@ public class FindSubarrayWithMaxSum {
             }
         }
         if (startIndex!=-1 && endIndex!=-1) {
-            for (int i=startIndex; i<=endIndex; i++) {
+            for (int i=lastStartIndex; i<=lastEndIndex; i++) {
                 output.add(A[i]);
             }
 
