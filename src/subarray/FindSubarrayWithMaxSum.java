@@ -8,6 +8,8 @@ import java.util.Scanner;
 public class FindSubarrayWithMaxSum {
     static ArrayList<Integer> findSubArray(int[] A) {
         int sum=0;
+        int lastStartIndex=0;
+        int lastEndIndex=-1;
         int maxSum=Integer.MIN_VALUE;
         int startIndex=0; //eg 1 2 0
         int endIndex=-1;
@@ -19,13 +21,16 @@ public class FindSubarrayWithMaxSum {
             if (sum>=maxSum) {
                 maxSum=sum;
                 endIndex=i;
+                lastStartIndex=startIndex;
+                lastEndIndex=endIndex;
 
             }
 
             if (sum<0) {
                 sum=0;
+
                 startIndex=i+1;
-                endIndex=-1;
+                endIndex=i+1;
             }
         }
         if (startIndex!=-1 && endIndex!=-1) {
