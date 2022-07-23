@@ -12,7 +12,7 @@ public class UniqueEle3 {
                     count++;
                 }
             }
-            if (count%3==0) {
+            if (count%3==1) {
                 ans=ans|(1<<i); //(or, ans=ans+2^i, or, that bit is contributing 2^i to ans)
             }
         }
