@@ -13,7 +13,7 @@ public class UniqueEle3 {
                 }
             }
             if (count%3==0) {
-                ans=ans|(1<<i); (//or, ans=ans+2^i, or, that bit is contributing 2^i to ans)
+                ans=ans|(1<<i); //(or, ans=ans+2^i, or, that bit is contributing 2^i to ans)
             }
         }
         return ans;
